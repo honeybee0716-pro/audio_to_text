@@ -20,7 +20,7 @@ print(result["text"])
 
 # Optionally, save the transcription to a file
 output_file = args.audio_file + "_transcription.txt"
-with open(output_file, "w") as f:
+with open(output_file, "w", encoding="utf-8") as f:
     f.write(result["text"])
 
 print(f"\nTranscription saved to {output_file}")
