@@ -12,7 +12,7 @@ args = parser.parse_args()
 model = whisper.load_model("base")  # You can change "base" to other sizes like "tiny", "small", etc.
 
 # Transcribe the audio file
-result = model.transcribe(args.audio_file)
+result = model.transcribe(args.audio_file, language="en")
 
 # Print the transcription
 print("Transcription:")
