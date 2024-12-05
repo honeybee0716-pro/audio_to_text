@@ -9,7 +9,7 @@ parser.add_argument("audio_file", type=str, help="Path to the audio file to tran
 args = parser.parse_args()
 
 # Load the Whisper model
-model = whisper.load_model("base")  # You can change "base" to other sizes like "tiny", "small", etc.
+model = whisper.load_model("small")  # You can change "base" to other sizes like "tiny", "small", etc.
 
 # Transcribe the audio file
 result = model.transcribe(args.audio_file, language="en")
